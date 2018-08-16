@@ -3,6 +3,8 @@ require('dotenv/config');
 const { resolve } = require('path');
 
 module.exports = {
+  // mode: 'universal',
+
   /**
    * Specify application header defaults
    */
@@ -23,13 +25,14 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
   },
-  css: ['~/assets/styles/app.styl', '~/assets/styles/main.styl'],
+  /*
+  ** Global CSS
+  */
+  css: ['~/assets/styles/index.scss'],
   /**
    * Customize application loading bar
    */
-  loading: {
-    color: '#ff4081'
-  },
+  loading: { color: '#ff4081' },
   /**
    * Specify build directory
    */
@@ -50,7 +53,7 @@ module.exports = {
       'vue-class-component',
       'vue-property-decorator',
       'vuex-class',
-      'vuetify'
+      // 'vuetify'
     ]
   },
   /**
@@ -73,20 +76,20 @@ module.exports = {
         tslint: resolve(__dirname, 'tslint.json')
       }
     ],
-    [
-      'nuxtjs-extensions/vuetify',
-      {
-        css: false,
-        theme: {
-          primary: '#3f51b5',
-          secondary: '#757de8',
-          accent: '#ff4081',
-          error: '#F44336',
-          warning: '#ff9800',
-          info: '#2196F3',
-          success: '#4CAF50'
-        }
-      }
-    ]
+    // [
+    //   'nuxtjs-extensions/vuetify',
+    //   {
+    //     css: false,
+    //     theme: {
+    //       primary: '#3f51b5',
+    //       secondary: '#757de8',
+    //       accent: '#ff4081',
+    //       error: '#F44336',
+    //       warning: '#ff9800',
+    //       info: '#2196F3',
+    //       success: '#4CAF50'
+    //     }
+    //   }
+    // ]
   ]
 };

@@ -6,7 +6,8 @@ import { Bootstrap } from './lib/bootstrap';
 (async () =>
   new Bootstrap({
     module: ApplicationModule
-  }).main())().catch(e => {
+  }).main()
+)().catch(e => {
   console.error(e);
   process.exit(1);
 });

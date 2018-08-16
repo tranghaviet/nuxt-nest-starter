@@ -1,7 +1,7 @@
 import { NuxtContext } from 'nuxt';
 import { ActionContext, ActionTree, MutationTree } from 'vuex';
 
-import { SET_IP } from '../util/mutation-types';
+import { SET_IP } from '../utils/mutation-types';
 
 /**
  * Root State

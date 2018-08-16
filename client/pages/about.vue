@@ -1,11 +1,5 @@
 <template>
-  <v-container>
-    <v-layout>
-      <v-flex>
-        <h1 class="display-1">About Page</h1>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <nuxt-link class="" to="/">to home</nuxt-link>
 </template>
 
 <script lang="ts">
