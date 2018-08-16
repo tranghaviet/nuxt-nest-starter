@@ -1,9 +1,9 @@
-import { Component } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 
 import { FetchUsersOptions, FetchUsersResponse } from './users.interfaces';
 
-@Component()
+@Injectable()
 export class UsersService {
   private readonly URL = 'https://randomuser.me/api/';
 

@@ -31,9 +31,17 @@ export class Bootstrap {
         directory: resolve('.', 'logs')
       })
     });
+
+    // Why only one route (Nest or Nuxt) works?
+    // https://github.com/nestjs/nest/issues/414
+    const instance = this.server;
+    // tslint:disable-next-line
+    instance.get(/^(?!\/?(api|test)).+$/, (req, res) => this.nuxt.render(req, res));
+
     this.app.setGlobalPrefix('api');
     await this.app.listen(this.port);
-    this.app.use(this.nuxt.render);
+    // pass nuxt middleware to express instance after making nest to run
+    // this.app.use(this.nuxt.render);
   }
 
   private async configureNuxt() {
