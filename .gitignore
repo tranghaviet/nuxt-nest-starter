@@ -12,3 +12,8 @@ npm-debug.log
 
 # misc
 .DS_Store
+
+.idea
+yarn.lock
+package-lock.json
+yarn-error.log
