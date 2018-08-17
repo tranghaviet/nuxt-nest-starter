@@ -53,7 +53,6 @@ module.exports = {
       'vue-class-component',
       'vue-property-decorator',
       'vuex-class',
-      // 'vuetify'
     ]
   },
   /**
@@ -76,20 +75,5 @@ module.exports = {
         tslint: resolve(__dirname, 'tslint.json')
       }
     ],
-    // [
-    //   'nuxtjs-extensions/vuetify',
-    //   {
-    //     css: false,
-    //     theme: {
-    //       primary: '#3f51b5',
-    //       secondary: '#757de8',
-    //       accent: '#ff4081',
-    //       error: '#F44336',
-    //       warning: '#ff9800',
-    //       info: '#2196F3',
-    //       success: '#4CAF50'
-    //     }
-    //   }
-    // ]
   ]
 };

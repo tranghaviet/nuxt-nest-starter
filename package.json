@@ -35,7 +35,7 @@
     "fastify-formbody": "^2.0.0",
     "node-sass": "^4.9.3",
     "nuxt": "^1.4.0",
-    "nuxtjs-extensions": "^1.8.0",
+    "nuxtjs-extensions": "tranghaviet/nuxtjs-extensions#master",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.2.2",
